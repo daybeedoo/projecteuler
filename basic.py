@@ -25,3 +25,8 @@ def evenfib(term):
     return even
 
 print("problem 2: ", evenfib(10))
+
+def largestprimefactor(num):
+    print()
+
+print("problem 3: ", largestprimefactor(10))
