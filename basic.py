@@ -27,6 +27,22 @@ def evenfib(term):
 print("problem 2: ", evenfib(10))
 
 def largestprimefactor(num):
+    biggest = 1
+    check = 2
+    while num > 0 and num != 1:
+        if num % check == 0:
+            num = num // check
+            if check > biggest:
+                biggest = check
+            check = 2
+        else:
+            check += 1
+
+    return biggest
+
+print("problem 3: ", largestprimefactor(600851475143))
+
+def largestpalindromeproduct():
     print()
 
-print("problem 3: ", largestprimefactor(10))
+print("problem 4: ", largestpalindromeproduct())
